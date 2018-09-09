@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+public/
+template/
+src/libs/
+package-lock.json
+*.psd
+*.DS_Store
