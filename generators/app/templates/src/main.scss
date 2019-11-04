@@ -1,0 +1,114 @@
+.license-card {
+	margin-bottom: 30px;
+	color: #444;
+	&:hover {
+		&__btn {
+			position: relative;
+			top: 6px;
+		}
+	}
+	&__wrapper {
+		display: flex;
+		background-color: red;
+		max-width: 310px;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		background-color: #36424D;
+		padding: 20px 27px 27px;
+		outline: 0 #444 solid;
+		margin: 0 auto;
+		transition: outline .2s;
+		&:hover {
+			outline: 6px #444 solid;
+			.license-price__content {
+				background-color: #dddddd;
+			}
+		}
+	}
+	&__header {
+		position: relative;
+		h3 {
+			font-size: 30px;
+			font-weight: bold;
+			line-height: inherit;
+			text-align: center;
+			color: #444;
+			margin: 0 0 20px;
+		}
+		h4 {
+			color: red;
+			position: absolute;
+			left: 50%;
+			bottom: -25px;
+			font-size: 19px;
+			transform: translateX(-50%);
+		}
+	}
+	&__price {
+		margin-top: 20px;
+	}
+	&__promo {
+		display: none;
+		padding-top: 10px;
+		p {
+			color: #444;
+			text-align: center;
+			font-size: 18px;
+			line-height: 2;
+		}
+	}
+	&__text {
+		text-align: center;
+		margin-top: 30px;
+		line-height: 2.2;
+		transition: margin-top, .5s;
+		p {
+			text-align: center;
+			color: #F2F2F2 !important;
+			margin-bottom: 0;
+			line-height: 2.2;
+		}
+	}
+	&__promo--visible + &__text {
+		margin-top: 5px;
+	}
+	&__actions {
+		margin-top: 20px;
+		text-align: center;
+	}
+	&__btn:focus {
+		text-decoration: none;
+		color: white;
+		outline: 0;
+	}
+	&__btn:hover {
+		transform: translateY(-1px);
+		background-color: darken(#444, 2%);
+		color: white;
+		text-decoration: none;
+	}
+	&__btn--no-accent {
+		background-color: #444;
+	}
+	&__btn--result {
+		background-color: #444;
+		color: #444;
+		border-color: #444;
+		.fa {
+			position: relative;
+			left: -7px;
+		}
+	}
+	&__btn--result:hover {
+		background-color: darken(#444, 2%);
+		color: #444;
+	}
+	&__btn--result:focus {
+		background-color: darken(#444, 5%);
+		color: #444;
+	}
+}
+body {
+	// background-color: red;
+}

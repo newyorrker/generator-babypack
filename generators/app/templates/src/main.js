@@ -1,4 +1,4 @@
-import './local.css';
+import './local.scss';
 
 import React from 'react';
 import { render } from 'react-dom';
